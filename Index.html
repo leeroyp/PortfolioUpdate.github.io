@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>leeroy phili</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6358f34dbd.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body class="theme-dark">
+    <nav class="navbar-dark bg-dark row row-cols-8">
+        <a class="nav-link home-button" href="#home">Home</a>
+        <a class="nav-link navigation about-button" href="#about">About</a>
+        <a class="nav-link navigation portfolio-button" href="#portfolio">Portfolio</a>
+        <a class="nav-link navigation contact-button" href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- The first page of the portfolio. Simple welcome page with a button to direct you the the about page -->
+    <div class="home">
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-8">
+                <h1>Welcome to Leeroy Phili's Portfolio page </h1>
+                <h1>I'm a junior full stacks Web Developer </h1>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="wrapper">
+            <a href="/images/Resume.pdf" target="_blank"><button type="button" class="btn btn-outline-success"
+                    id="button">Resume</button></a>
+        </div>
+
+    </div>
+
+    <!-- Navbar. Easily navigate around the website -->
+
+    <!-- The about me section of the portfolio -->
+
+
+    <div class="container about">
+
+        <h1 class="header">
+            About
+        </h1>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="curve" id="profileImg" src="images/leeroy.jpg" alt="A photo of me" width="300px">
+            </div>
+            <div class="col-sm-8">
+                <h4>Bio</h4>
+
+                <p>
+                    Full Stack Web Developer experienced in 3d design, with a background in Mechanical at
+                    George Brown College and Cape Breton University and a Full Stack Development certificate at the
+                    University of Toronto.
+                    Passionate about tackling programming challenges with skills in front-end development languages
+                    such as HTML and Javascript and responsive app design. Known for writing clean solutions to
+                    coding problems and good collaboration with team members
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <div class="container portfolio">
+        <h1 class="header">
+            Portfolio
+        </h1>
+
+        <!-- Project 1 -->
+        <div class="card-deck">
+            <div class="card">
+                <img src="images/spotify.png" class="card-img-top port" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Spotify</h5>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Find out more
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Project2</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body-1">
+                                    people people people people people
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- project2 -->
+            <div class="card">
+                <img src="images/The-Weather-Dashboard.jpg" class="card-img-top port" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">weather</h5>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+                        Find out more
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Project2</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body-2">
+                                    0987654321
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/scheduleHD.jpeg" class="card-img-top port" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Scheduler</h5>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
+                        Find out more
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Project3</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body-3">
+                                    12344567890
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="images/spotify.png" class="card-img-top port" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Spotify</h5>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+                            Find out more
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Project4</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body-4">
+                                        qwertyuiop
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/The-Weather-Dashboard.jpg" class="card-img-top port" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">weather</h5>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">
+                            Find out more
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Project5</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body-5">
+                                        asdfgh
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="card">
+                        <img src="images/scheduleHD.jpeg" class="card-img-top port" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Scheduler</h5>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#exampleModal6">
+                                Find out more
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Project6</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body-6">
+                                            xcvbm wsd hewh
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <a href="#" class="btn btn-primary">Learn more about this project</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- My contact information -->
+    <div class=" contact contact-title">
+        <div class="container">
+            <h1 class="contacttitle">
+                Contact
+            </h1>
+
+            <div>
+                <i class="fas fa-phone phoneinfo"> (416) 828 4176</i>
+                <br>
+                <i class="far fa-envelope emailinfo fontawesome"> leeroyphili@gmail.com</i>
+            </div>
+
+            <!-- Send me a direct email in this form -->
+            <form>
+
+                <div class="form-group col-md-6 name">
+                    <label for="inputEmail4"></label>
+                    <input type="email" placeholder="Name" class="form-control" id="inputEmail4">
+                </div>
+
+                <div class="form-group col-md-6 email">
+                    <label for="inputEmail4"></label>
+                    <input type="email" placeholder="Email@example.com" class="form-control" id="inputEmail4">
+                </div>
+
+                <div class="form-group textarea">
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" placeholder="Your Message" id="exampleFormControlTextarea1"
+                        rows="3"></textarea>
+                    <button type="submit" class="btn btn-secondary submit">Submit</button>
+                </div>
+
+            </form>
+
+            <!-- This button takes you back to the welcome page -->
+            <i class="fas fa-angle-double-up fa-3x straight-top"></i>
+
+            <!-- Link to my linkedin/github etc. -->
+            <div>
+                <i class="fab fa-linkedin social fa-3x" id="linkedin"></i>
+                <i class="fab fa-github-square social fa-3x" id="github"></i>
+                <i class="fab fa-instagram-square social fa-3x" id="insta"></i>
+                <i class="fab fa-twitter-square social fa-3x" id="twitter"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
