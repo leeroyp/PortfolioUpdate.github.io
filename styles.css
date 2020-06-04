@@ -16,39 +16,62 @@
     background-color: rgb(238, 237, 237)
   }
 
-  /* #overlay,#overlay2, #overlay3, #overlay4, #overlay5{
-    position: fixed;
-    height: 100%; 
-    width: 100%;
-    top: 0;
-    right: 0;  
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    display: none;
-  }
-  
-  #popup {
-    max-width: 600px;
-    width: 80%;
-    max-height: 300px;  
-    height: 80%; 
-    padding: 20px;
-    position: relative;
-    background: rgba(243, 230, 230, 0.466);
-    margin: 20px auto;
-  }
-    
-  #close, #close2, #close3, #close4, #close5 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    color: rgb(7, 19, 10);
-  } */
 
   .port {
     height: 250px;
     width: 350px;
   }
+
+  #photos {
+    /* Prevent vertical gaps */
+    line-height: 0;
+     
+    -webkit-column-count: 5;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;  
+  }
   
+  #photos img {
+    /* Just in case there are inline attributes */
+    width: 80% !important;
+    height: auto !important;
+  }
+  
+/* 
+  .circular--landscape {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .circular--landscape img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+  } */
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+  circle-shape-example { 
+    font-family: Open Sans, sans-serif; 
+    margin: 2rem; 
+  }
+  #circle-shape-example p { 
+    line-height: 1.8; 
+  }
+  #circle-shape-example .curve { 
+    width: 200px;
+  height: 200px;
+    min-width: 150px;
+    float: left;
+    margin-right:2rem; 
+    border-radius: 50%;
+    -webkit-shape-outside:circle();
+    shape-outside:circle();
+
+  }
