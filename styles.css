@@ -2,20 +2,41 @@
 
     width: 100%;
     height: 100vh;
+    padding-left: 20px;
   background-image: url('https://images.pexels.com/photos/776656/pexels-photo-776656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=450&w=1060');}
 
   .about
   {
     width: 100%;
     height: 100vh; 
-    background-color: rgb(238, 237, 237)
+    background-color: rgb(238, 237, 237);
+  
+    padding-bottom: 50px ;
+
+    
   }
 
   .portfolio{
     width: 100%;
-    background-color: rgb(238, 237, 237)
+    background-color: rgb(238, 237, 237);
+   padding-top: 50px;
+   padding-bottom: 50px ;
+    
   }
 
+  .first{
+    padding-top: 25px;
+    padding-bottom: 25px ;
+  }
+  
+  .second{
+    padding-top: 25px;
+    padding-bottom: 25px ;
+  }
+.resume{
+  margin-left: 47%;
+  margin-top: 25px;
+}
 
   .port {
     height: 250px;
@@ -36,9 +57,29 @@
   
   #photos img {
     /* Just in case there are inline attributes */
-    width: 80% !important;
+    width: 75% !important;
     height: auto !important;
   }
+
+ h1{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+ }
+
+ h2{
+  font-family: 'Playfair Display', serif;
+  padding-top: 15%;
+
+ }
+
+ h4,p{
+  font-family: 'Playfair Display', serif;
+
+ }
+ .navbar{
+   margin-left: 50%;
+   /* margin-right: 25%; */
+ }
   
 /* 
   .circular--landscape {
@@ -73,5 +114,38 @@
     border-radius: 50%;
     -webkit-shape-outside:circle();
     shape-outside:circle();
+  }
 
+  .DECK1{
+    padding-top: 15px;
+    padding-bottom: 15px ;
+  }
+
+  @media (max-width: 1200px) {
+    #photos {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+    }
+  }
+  @media (max-width: 1000px) {
+    #photos {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+    }
+  }
+  @media (max-width: 800px) {
+    #photos {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
+  }
+  @media (max-width: 400px) {
+    #photos {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
   }

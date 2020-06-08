@@ -12,11 +12,7 @@
 
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Girassol&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/6358f34dbd.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -24,69 +20,74 @@
 </head>
 
 <body class="theme-dark">
-    <nav class="navbar-dark bg-dark row row-cols-8">
+  
+    <nav class="navbar  navbar-light bg-light">
+        <ul class="nav" id="navCenter">
+    <li class="nav-link">
         <a class="nav-link home-button" href="#home">Home</a>
+    </li> <p class="divider">|</p>
+    <li class="nav-link">
         <a class="nav-link navigation about-button" href="#about">About</a>
+    </li><p class="divider">|</p>
+    <li class="nav-link">
         <a class="nav-link navigation portfolio-button" href="#portfolio">Portfolio</a>
+    </li><p class="divider">|</p>
+    <li class="nav-link">
         <a class="nav-link navigation contact-button" href="#contact">Contact</a>
+    </li>
+    </ul>
     </nav>
 
 
-    <!-- The first page of the portfolio. Simple welcome page with a button to direct you the the about page -->
+    <!-- This is my welcome page,  very simple intro along with a button that will take us to view the resume  -->
     <div class="home">
 
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-8">
-                <h1>Welcome to Leeroy Phili's Portfolio page </h1>
-                <h1>I'm a junior full stacks Web Developer </h1>
+                <h2>Welcome to Leeroy Phili's Portfolio page <br>
+                I'm a junior full stacks Web Developer </h2>
             </div>
             <div class="col-sm-3"></div>
         </div>
 
         <div class="wrapper">
-            <a href="/images/Resume.pdf" target="_blank"><button type="button" class="btn btn-outline-success"
-                    id="button">Resume</button></a>
+            <a href="Leeroy Phili  Resume.pdf" target="_blank"><button type="button" class="btn btn-outline-success resume"
+                    id="button ">Resume</button></a>
         </div>
 
     </div>
 
-    <!-- Navbar. Easily navigate around the website -->
 
-    <!-- The about me section of the portfolio -->
+    <!-- First Card to wrap the about me section -->
+    <div class="card first">
 
+        <div class="container about">
 
-    <div class="container about">
+            <h1 class="header">About</h1>
 
-        <h1 class="header">
-            About
-        </h1>
+          
 
-        <!-- <div class="row">
-            <div class="col-sm-5"> -->
+            <div id="circle-shape-example">
+                <img class=" curve" src="images/Leecopy.png" alt="A photo of me">
+                <h4>Bio</h4>
 
-        <div id="circle-shape-example">
-            <img class=" curve" src="images/Leecopy.png" alt="A photo of me">
-            <h4>Bio</h4>
-
-            <p>
-                Full Stack Web Developer experienced in 3d design, with a background in Mechanical at
-                George Brown College and Cape Breton University and a Full Stack Development certificate at the
-                University of Toronto.
-                Passionate about tackling programming challenges with skills in front-end development languages
-                such as HTML and Javascript and responsive app design. Known for writing clean solutions to
-                coding problems and good collaboration with team members
-            </p>
-        </div>
+                <p>
+                    Full Stack Web Developer experienced in 3d design, with a background in Mechanical at
+                    George Brown College and Cape Breton University and a Full Stack Development certificate at the
+                    University of Toronto.
+                    Passionate about tackling programming challenges with skills in front-end development languages
+                    such as HTML and Javascript and responsive app design. Known for writing clean solutions to
+                    coding problems and good collaboration with team members
+                </p>
+            </div>
 
 
-        <!-- </div> -->
-        <!-- <div class="col-sm-7    "> -->
             <div class="card w-75">
                 <div class="card-body">
                     <h5 class="card-title">Experience</h5>
                     <section id="photos">
-                        <img src="css3.svg" alt="css">  
+                        <img src="css3.svg" alt="css">
                         <img src="heroku.svg" alt="heroku">
                         <img src="jquery-vertical.svg" alt="jquery">
                         <img src="js.svg" alt="js">
@@ -97,197 +98,65 @@
                         <img src="html.svg" alt="html">
                         <img src="github.png" alt="github">
                         <img src="mysql.svg" alt="mysql">
-        
-        
                     </section>
-                </div>
-              </div>
-            
-        
-
-
-    </div>
-
-    <div class="container portfolio">
-        <h1 class="header">
-            Portfolio
-        </h1>
-
-        <!-- Project 1 -->
-        <div class="card-deck">
-            <div class="card">
-                <img src="images/openSound.png" class="card-img-top port" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">OpenSound Project</h5>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Find out more
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Project2</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body-1">
-                                    This application serves as an alternative to the publicly available Spotify player.
-                                    To use this application you have to signup and be a member in order for your data to
-                                    be save to the database. Once you're a member, users have the ability to:
-                                    <ul>
-                                        <li>Search for an Artist: </li>
-                                        <li>Search for a Song:</li>
-                                        <li>Search for an Album:</li>
-                                        <li>"Add" to their own personal playlist.</li>
-
-
-                                    </ul>
-                                    This app applies everything from colleting data through various api call and saving
-                                    it the databas, node commands and many other application.
-
-                                </div>
-                                <div class="modal-footer">
-                                    <a href="https://stark-woodland-75959.herokuapp.com/app" target="_blank">
-                                        <button type="button" class="btn btn-outline-success">View Webpage</button></a>
-                                    <a href="https://github.com/morenogomes/project_2" target="_blank">
-                                        <button type="button" class="btn btn-outline-warning">View Code </button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- project2 -->
-            <div class="card">
-                <img src="images/Burger.png" class="card-img-top port" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Eat Da Burger</h5>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
-                        Find out more
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Project2</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body-2">
-                                    Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd
-                                    like to eat.
-                                    <ul>
-                                        <li>Whenever a user submits a burger's name, your app will display the burger on
-                                            the left side of the page -- waiting to be devoured.</li>
-
-                                        <li>Each burger in the waiting area also has a Devour it! button. When the user
-                                            clicks it, the burger will move to the right side of the page.</li>
-
-                                        <li>Your app will store every burger in a database, whether devoured or not.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="modal-footer">
-                                    <a href="https://github.com/leeroyp/-burger-logger-" target="_blank">
-                                        <button type="button" class="btn btn-outline-success">View Webpage</button></a>
-                                    <a href="https://github.com/leeroyp/-burger-logger-" target="_blank">
-                                        <button type="button" class="btn btn-outline-warning">View Code </button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/NoteTaker.png" class="card-img-top port" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Note Taker</h5>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">
-                        Find out more
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Project3</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body-3">
-                                    An application that can be used to write, save, and delete notes.
-                                    <p>This application will use an express backend and save and retrieve note data from
-                                        a JSON file.</p>
-                                    <p>To use the program simple run node server.js on your terminal then open your
-                                        localhost browser that is specified in the program. Once that is done you get
-                                        can started and post new notes , delete the ones you no longer need and you can
-                                        go to /api/notes on the localhost to the all the notes currentls saved in the
-                                        api..</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <a href=" https://leeroyp.github.io/Assignment6LP.github.io/" target="_blank">
-                                        <button type="button" class="btn btn-outline-success">View Webpage</button></a>
-                                    <a href="https://github.com/leeroyp/Assignment6LP.github.io" target="_blank">
-                                        <button type="button" class="btn btn-outline-warning">View Code </button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div>
-            <div class="card-deck">
+    <div class="card second">
+
+
+        <div class="container portfolio">
+            <h1 class="header">
+                Portfolio
+            </h1>
+
+            <!-- Project 1 -->
+            <div class="card-deck DECK1">
                 <div class="card">
-                    <img src="images/spotify.png" class="card-img-top port" alt="...">
+                    <img src="images/openSound.png" class="card-img-top port" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Spotify</h5>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">
+                        <h5 class="card-title">OpenSound Project</h5>
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
                             Find out more
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog"
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Project4</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Project2</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body-4">
-                                        <p>THis was by far the most challenging one. In this project we created our own
-                                            local serve and linked it to our JavaScript. </p>
-                                        <p>
-                                            Once this was all done, we were able to connect to the spotify API and
-                                            make request through our server and we were successful able to get a
-                                            response back
-                                            and render the content in our page. </p>
-                                        <p></p>
-                                        <p> Some of the requests made included artist picture, preview of each song and
-                                            generated playlist that specific artis/ genre.</p>
+                                    <div class="modal-body-1">
+                                        This application serves as an alternative to the publicly available Spotify
+                                        player.
+                                        To use this application you have to signup and be a member in order for your
+                                        data to
+                                        be save to the database. Once you're a member, users have the ability to:
+                                        <ul>
+                                            <li>Search for an Artist: </li>
+                                            <li>Search for a Song:</li>
+                                            <li>Search for an Album:</li>
+                                            <li>"Add" to their own personal playlist.</li>
+
+
+                                        </ul>
+                                        This app applies everything from colleting data through various api call and
+                                        saving
+                                        it the databas, node commands and many other application.
+
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="https://github.com/leeroyp/Express-Homework-Note-Taker.github.io"
-                                            target="_blank">
+                                        <a href="https://stark-woodland-75959.herokuapp.com/app" target="_blank">
                                             <button type="button" class="btn btn-outline-success">View
                                                 Webpage</button></a>
-                                        <a href="https://github.com/leeroyp/Express-Homework-Note-Taker.github.io"
-                                            target="_blank">
+                                        <a href="https://github.com/morenogomes/project_2" target="_blank">
                                             <button type="button" class="btn btn-outline-warning">View Code
                                             </button></a>
                                     </div>
@@ -296,41 +165,93 @@
                         </div>
                     </div>
                 </div>
+                <!-- project2 -->
                 <div class="card">
-                    <img src="images/Weather2.png" class="card-img-top port" alt="...">
+                    <img src="images/Burger.png" class="card-img-top port" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">The weather dashboard</h5>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal5">
+                        <h5 class="card-title">Eat Da Burger</h5>
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal2">
                             Find out more
                         </button>
+
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog"
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Project5</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Project2</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <div class="modal-body-5">
-                                        <p>By far my favourite assignemtn so far. In this assingment I was challenged to
-                                            use
-                                            everthing i have learned.</p>
-                                        <p> I applied the use of HTML, CSS , jQuery, Moment Js , local storages,
-                                            AJAX, APIs. </p>
-                                        <p>I was able to connect and make request to the weather network API. from there
-                                            I was
-                                            able to let the user search diffrent cities and be able to get a response
-                                            which was rendered to the
-                                            page.</p>
-                                        <p>Each time a user searches a city, the search input was save as a buttton
-                                            which would be used same
-                                            city again</p>
+                                    <div class="modal-body-2">
+                                        Eat-Da-Burger! is a restaurant app that lets users input the names of burgers
+                                        they'd
+                                        like to eat.
+                                        <ul>
+                                            <li>Whenever a user submits a burger's name, your app will display the
+                                                burger on
+                                                the left side of the page -- waiting to be devoured.</li>
+
+                                            <li>Each burger in the waiting area also has a Devour it! button. When the
+                                                user
+                                                clicks it, the burger will move to the right side of the page.</li>
+
+                                            <li>Your app will store every burger in a database, whether devoured or not.
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="https://leeroyp.github.io/Assignment6LP.github.io/" target="_blank">
+                                        <a href="https://github.com/leeroyp/-burger-logger-" target="_blank">
+                                            <button type="button" class="btn btn-outline-success">View
+                                                Webpage</button></a>
+                                        <a href="https://github.com/leeroyp/-burger-logger-" target="_blank">
+                                            <button type="button" class="btn btn-outline-warning">View Code
+                                            </button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="card">
+                    <img src="images/NoteTaker.png" class="card-img-top port" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Note Taker</h5>
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal3">
+                            Find out more
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Project3</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body-3">
+                                        An application that can be used to write, save, and delete notes.
+                                        <p>This application will use an express backend and save and retrieve note data
+                                            from
+                                            a JSON file.</p>
+                                        <p>To use the program simple run node server.js on your terminal then open your
+                                            localhost browser that is specified in the program. Once that is done you
+                                            get
+                                            can started and post new notes , delete the ones you no longer need and you
+                                            can
+                                            go to /api/notes on the localhost to the all the notes currentls saved in
+                                            the
+                                            api..</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href=" https://leeroyp.github.io/Assignment6LP.github.io/" target="_blank">
                                             <button type="button" class="btn btn-outline-success">View
                                                 Webpage</button></a>
                                         <a href="https://github.com/leeroyp/Assignment6LP.github.io" target="_blank">
@@ -342,45 +263,155 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="card">
-                    <img src="images/employees.png" class="card-img-top port" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Employee Tracker</h5>
+            <div>
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="images/spotify.png" class="card-img-top port" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Spotify</h5>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#exampleModal4">
+                                Find out more
+                            </button>
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal6">
-                            Find out more
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Project6</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Project4</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body-4">
+                                            <p>THis was by far the most challenging one. In this project we created our
+                                                own
+                                                local serve and linked it to our JavaScript. </p>
+                                            <p>
+                                                Once this was all done, we were able to connect to the spotify API and
+                                                make request through our server and we were successful able to get a
+                                                response back
+                                                and render the content in our page. </p>
+                                            <p></p>
+                                            <p> Some of the requests made included artist picture, preview of each song
+                                                and
+                                                generated playlist that specific artis/ genre.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="https://github.com/leeroyp/Express-Homework-Note-Taker.github.io"
+                                                target="_blank">
+                                                <button type="button" class="btn btn-outline-success">View
+                                                    Webpage</button></a>
+                                            <a href="https://github.com/leeroyp/Express-Homework-Note-Taker.github.io"
+                                                target="_blank">
+                                                <button type="button" class="btn btn-outline-warning">View Code
+                                                </button></a>
+                                        </div>
                                     </div>
-                                    <div class="modal-body-6">
-                                        <p> This application is a solution for managing a company's employees using
-                                            node, inquirer, and MySQL</p>
-                                        <p>Users can add new employees, roles , and departments. </p>
-                                        <p>Once data has been inputed, users have the ability to check the data based on
-                                            the selected options which can vary from view employees, veiw roles and view
-                                            departments. </p>
-                                        <p>Users also have the ability to update employee info based on the the employee
-                                            id.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/Weather2.png" class="card-img-top port" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The weather dashboard</h5>
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#exampleModal5">
+                                Find out more
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Project5</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body-5">
+                                            <p>By far my favourite assignemtn so far. In this assingment I was
+                                                challenged to
+                                                use
+                                                everthing i have learned.</p>
+                                            <p> I applied the use of HTML, CSS , jQuery, Moment Js , local storages,
+                                                AJAX, APIs. </p>
+                                            <p>I was able to connect and make request to the weather network API. from
+                                                there
+                                                I was
+                                                able to let the user search diffrent cities and be able to get a
+                                                response
+                                                which was rendered to the
+                                                page.</p>
+                                            <p>Each time a user searches a city, the search input was save as a buttton
+                                                which would be used same
+                                                city again</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="https://leeroyp.github.io/Assignment6LP.github.io/"
+                                                target="_blank">
+                                                <button type="button" class="btn btn-outline-success">View
+                                                    Webpage</button></a>
+                                            <a href="https://github.com/leeroyp/Assignment6LP.github.io"
+                                                target="_blank">
+                                                <button type="button" class="btn btn-outline-warning">View Code
+                                                </button></a>
+                                        </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <a href="https://github.com/leeroyp/Employee-tracker" target="_blank">
-                                            <button type="button" class="btn btn-outline-success">View
-                                                Webpage</button></a>
-                                        <a href="https://github.com/leeroyp/Employee-tracker" target="_blank">
-                                            <button type="button" class="btn btn-outline-warning">View Code
-                                            </button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="card">
+                        <img src="images/employees.png" class="card-img-top port" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Employee Tracker</h5>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                data-target="#exampleModal6">
+                                Find out more
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Project6</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body-6">
+                                            <p> This application is a solution for managing a company's employees using
+                                                node, inquirer, and MySQL</p>
+                                            <p>Users can add new employees, roles , and departments. </p>
+                                            <p>Once data has been inputed, users have the ability to check the data
+                                                based on
+                                                the selected options which can vary from view employees, veiw roles and
+                                                view
+                                                departments. </p>
+                                            <p>Users also have the ability to update employee info based on the the
+                                                employee
+                                                id.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="https://github.com/leeroyp/Employee-tracker" target="_blank">
+                                                <button type="button" class="btn btn-outline-success">View
+                                                    Webpage</button></a>
+                                            <a href="https://github.com/leeroyp/Employee-tracker" target="_blank">
+                                                <button type="button" class="btn btn-outline-warning">View Code
+                                                </button></a>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -389,15 +420,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-
-
-
-
-
     </div>
 
     <!-- My contact information -->
