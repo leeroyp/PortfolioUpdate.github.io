@@ -153,3 +153,12 @@
     column-count:         1;
     }
   }
+  @media screen and (max-width: 800px) {
+    .portfolio {
+      display: flex;
+      flex-direction: column;
+    }
+    .portfolio div:first-child {
+      order: 1;
+    }
+  }
