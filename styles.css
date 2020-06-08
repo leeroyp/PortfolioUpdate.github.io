@@ -24,15 +24,15 @@
     
   }
 
-  .first{
+  .first, .second{
     padding-top: 25px;
     padding-bottom: 25px ;
   }
   
-  .second{
+  /* .second{
     padding-top: 25px;
     padding-bottom: 25px ;
-  }
+  } */
 .resume{
   margin-left: 47%;
   margin-top: 25px;
