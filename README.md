@@ -24,10 +24,10 @@ Web link: https://leeroyp.github.io/PortfolioUpdate.github.io/
 
 ### Powered with 
  
-1. [Description]
-2. [Installation]
-3. [Usage]
-4. [Contributions]
+1. ###### HTML
+2. ###### JAVASCRIPT
+3. ###### CSS
+4. ###### BOOTSTRAP
 
 
 
