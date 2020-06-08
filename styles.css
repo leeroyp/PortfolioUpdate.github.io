@@ -43,6 +43,10 @@
     width: 350px;
   }
 
+  .Experience{
+    text-align: center;
+  }
+
   #photos {
     /* Prevent vertical gaps */
     line-height: 0;
