@@ -26,8 +26,8 @@ Web link: https://leeroyp.github.io/PortfolioUpdate.github.io/
  
 1. HTML
 2. JAVASCRIPT
-3. CSS
-4. BOOTSTRAP
+3. ###### CSS
+4. ###### BOOTSTRAP
 
 
 
